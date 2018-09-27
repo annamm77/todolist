@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  addItem() {
+    console.log('if you see this then you pressed a button');
+  }
+
   render() {
     return (
       <div className="App">
