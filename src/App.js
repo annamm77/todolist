@@ -11,6 +11,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, I'm going to write words until I understand what's happening
         </p>
+        <form onSubmit={this.addItem}>
+            <input placeholder="What's on your mind?"></input>
+            <button type="submit">Tell Me</button>
+        </form>
       </div>
     );
   }
