@@ -21,7 +21,7 @@ Short for "Document Object Model". The DOM takes plain HTML and visualizes it as
 At the cost of mixing up the acronym a little, the **DOM** **m**odels the contents of an HTML file as a single **d**ocument of **o**bjects. This modeling allows us to access and manipulate HTML elements in an object-oriented way, generally done using Javascript.
 
 For example, take
-```
+```html
 <html>
   <h1>Welcome!</h1>
   <div id="findMe"></div>
@@ -35,7 +35,7 @@ div.innerText = "Here I am!"
 ```
 
 Resulting in the following
-```
+```html
 <html>
   <h1>Welcome!</h1>
   <div id="findMe">Here I am!</div>
