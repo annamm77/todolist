@@ -15,7 +15,33 @@ I am personally stoked on learning more about building resuable components. Prev
 I'd like to look deeper into how to build testable components. Testing is routinely self-identified as an "area of growth" for me and additionally I haven't written a frontend test in 1.5+ years or possibly ever. Getting a bigger picture of the best practices surrounding component design and architecture should be helpful here so testability is kept in mind from the get-go rather than as a hurried afterthought. 
 
 ### Keywords and Concepts
-* DOM: 
+#### DOM
+Short for "Document Object Model". The DOM takes plain HTML and visualizes it as a tree of nodes, the nodes being the hierarchical structure of the HTML tags and their contents. The entire tree is considered a single "document" and is also an object.
+
+At the cost of mixing up the acronym a little, the **DOM** **m**odels the contents of an HTML file as a single **d**ocument of **o**bjects. This modeling allows us to access and manipulate HTML elements in an object-oriented way, generally done using Javascript.
+
+For example, take
+```
+<html>
+  <h1>Welcome!</h1>
+  <div id="findMe"></div>
+</html>
+```
+
+The DOM allows us methods to select and change the div element
+```javascript
+div = document.getElementById("findMe")
+div.innerText = "Here I am!"
+```
+
+Resulting in the following
+```
+<html>
+  <h1>Welcome!</h1>
+  <div id="findMe">Here I am!</div>
+</html>
+```
+
 * Virtual DOM: 
 * JSX:
 * Element:
